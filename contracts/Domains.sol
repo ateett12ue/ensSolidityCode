@@ -72,7 +72,7 @@ contract Domains is ERC721URIStorage {
         console.log("--------------------------------------------------------\n");
 
         _safeMint(msg.sender, newRecordId);
-        _setTokenURI(newRecordId, finalTokenUri);
+        _setTokenURI(newRecordId, 'ipfs://QmPQNosa254GDX4BU8i44UNMTYaBB5gSyU6jzkGiNoWeKo');
         domains[name] = msg.sender;
 
         names[newRecordId] = name;
